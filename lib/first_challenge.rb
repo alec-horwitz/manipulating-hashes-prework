@@ -24,10 +24,8 @@ def first_challenge
       #if it is, that means the VALUE is an array that we can iterate over to print out each element
 
       if attribute == :favorite_icecream_flavors
-        value.each do |flavor|
+        value.delete_if { |flavor| flavor == ("strawberry")}
           # here, each index element in an ice cream flavor string
-          flavor.delete_if("strawberry")
-        end
       end
     end
   end
