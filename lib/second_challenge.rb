@@ -8,7 +8,7 @@ def second_challenge
 
   #code your solution here!
   array =[]
-  groceries.each { |key, value|  
+  groceries.each { |key, value|
     value.each {|item|
       array.push(item)
     }
